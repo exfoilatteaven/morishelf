@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Morishelf — Campus Essentials</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">☂</span>
+                <span>morishelf</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">⌕</button>
+
+                <button class="cart-btn" id="cartBtn">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- SEARCH BAR -->
+    <div class="search-box" id="searchBox">
+        <div class="container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari kebutuhan kuliah kamu..."
+            >
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✦ CAMPUS ESSENTIALS
+                </p>
+
+                <h1>
+                    Everything you need,
+                    <span>one shelf away.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Temukan berbagai kebutuhan kuliah yang simple,
+                    useful, dan pastinya bikin kehidupan kampus kamu
+                    jadi lebih nyaman.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        Shop Now →
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        About Morishelf
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <strong>100+</strong>
+                        <span>Campus Items</span>
+                    </div>
+
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Delivery</span>
+                    </div>
+
+                    <div>
+                        <strong>Easy</strong>
+                        <span>Shopping</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="rain-decoration">☂</div>
+
+                <div class="product-card-main">
+
+                    <div class="product-image notebook">
+                        <span>✦</span>
+                        <p>MORISHELF</p>
+                        <small>student notes</small>
+                    </div>
+
+                    <div class="floating-card card-one">
+                        📚
+                        <span>Study<br>Essentials</span>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        ☕
+                        <span>Daily<br>Companion</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories section" id="categories">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SHOP BY CATEGORY</p>
+                    <h2>Campus essentials<br>for every day.</h2>
+                </div>
+
+                <p>
+                    Dari meja belajar sampai perjalanan
+                    ke kampus, Morishelf siap nemenin.
+                </p>
+            </div>
+
+
+            <div class="category-grid">
+
+                <button class="category-card" data-category="Stationery">
+                    <div class="category-icon">✎</div>
+                    <h3>Stationery</h3>
+                    <p>Notes, pens & more</p>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Bags">
+                    <div class="category-icon">🎒</div>
+                    <h3>Bags</h3>
+                    <p>Carry it everywhere</p>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Lifestyle">
+                    <div class="category-icon">☕</div>
+                    <h3>Lifestyle</h3>
+                    <p>For your daily routine</p>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Tech">
+                    <div class="category-icon">⌨</div>
+                    <h3>Tech Essentials</h3>
+                    <p>Useful tech accessories</p>
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products section" id="products">
+
+        <div class="container">
+
+            <div class="section-heading product-heading">
+
+                <div>
+                    <p class="eyebrow">OUR PICKS</p>
+                    <h2>Made for campus life.</h2>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="Stationery">
+                        Stationery
+                    </button>
+
+                    <button class="filter-btn" data-filter="Bags">
+                        Bags
+                    </button>
+
+                    <button class="filter-btn" data-filter="Lifestyle">
+                        Lifestyle
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card" data-category="Stationery">
+
+                    <div class="product-picture picture-one">
+                        📓
+
+                        <span class="product-tag">
+                            Best Seller
+                        </span>
+
+                        <button class="wishlist">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Stationery</p>
+
+                        <h3>Daily Notes Journal</h3>
+
+                        <div class="product-bottom">
+                            <strong>Rp39.000</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Daily Notes Journal"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card" data-category="Bags">
+
+                    <div class="product-picture picture-two">
+                        🎒
+
+                        <span class="product-tag">
+                            New
+                        </span>
+
+                        <button class="wishlist">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Bags</p>
+
+                        <h3>Campus Daily Tote</h3>
+
+                        <div class="product-bottom">
+                            <strong>Rp79.000</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Campus Daily Tote"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card" data-category="Lifestyle">
+
+                    <div class="product-picture picture-three">
+                        ☕
+
+                        <button class="wishlist">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Lifestyle</p>
+
+                        <h3>Study Buddy Tumbler</h3>
+
+                        <div class="product-bottom">
+                            <strong>Rp69.000</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Study Buddy Tumbler"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card" data-category="Tech">
+
+                    <div class="product-picture picture-four">
+                        🎧
+
+                        <span class="product-tag">
+                            Popular
+                        </span>
+
+                        <button class="wishlist">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Tech</p>
+
+                        <h3>Study Mode Headphones</h3>
+
+                        <div class="product-bottom">
+                            <strong>Rp129.000</strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Study Mode Headphones"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+        <div class="container about-container">
+
+            <div class="about-visual">
+
+                <div class="about-box">
+                    <span class="big-rain">☂</span>
+
+                    <div class="about-label">
+                        MORI
+                        <span>×</span>
+                        SHELF
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="eyebrow">ABOUT MORISHELF</p>
+
+                <h2>
+                    A little shelf
+                    for your campus journey.
+                </h2>
+
+                <p>
+                    <strong>Mori</strong> berarti hujan, sedangkan
+                    <strong>shelf</strong> berarti rak.
+                </p>
+
+                <p>
+                    Dari dua kata tersebut, lahirlah
+                    <strong>Morishelf</strong> — sebuah tempat
+                    sederhana untuk mengumpulkan berbagai hal
+                    yang dibutuhkan mahasiswa dalam perjalanan
+                    mereka di dunia perkuliahan.
+                </p>
+
+                <p>
+                    Seperti hujan yang memberikan suasana tenang
+                    dan rak yang menyimpan banyak barang berharga,
+                    Morishelf hadir sebagai “rak kecil” tempat
+                    mahasiswa menemukan kebutuhan mereka:
+                    stationery, bags, lifestyle items, hingga
+                    tech essentials.
+                </p>
+
+                <div class="about-values">
+
+                    <div>
+                        <span>01</span>
+                        <h4>Useful</h4>
+                        <p>Barang yang benar-benar berguna.</p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <h4>Simple</h4>
+                        <p>Simple things, better days.</p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <h4>Student-first</h4>
+                        <p>Dibuat untuk kehidupan mahasiswa.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="container cta-container">
+
+            <div>
+                <p class="eyebrow">READY TO STUDY?</p>
+
+                <h2>
+                    Your campus essentials
+                    are waiting.
+                </h2>
+            </div>
+
+            <a href="#products" class="btn btn-light">
+                Explore Products →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <span class="logo-icon">☂</span>
+                    <span>morishelf</span>
+                </a>
+
+                <p>
+                    Your little shelf for
+                    campus essentials.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Help</h4>
+
+                <a href="#">FAQ</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Follow Us</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Morishelf. Made for campus life.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CART MODAL -->
+    <div class="cart-modal" id="cartModal">
+
+        <div class="cart-content">
+
+            <div class="cart-header">
+
+                <h2>Your Cart</h2>
+
+                <button id="closeCart">
+                    ×
+                </button>
+
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+            </div>
+
+            <div class="cart-footer">
+
+                <div>
+                    <span>Total</span>
+                    <strong id="cartTotal">
+                        Rp0
+                    </strong>
+                </div>
+
+                <button class="checkout-btn">
+                    Checkout →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
